@@ -35,6 +35,12 @@ ReadIt.sub('babyelephantgifs').recent.first.url # => "http://i.imgur.com/fogh8W4
 ReadIt.sub('avocadosgonewild').sample.nsfw? # => true
 ```
 
+Returns recent posts from the sub reddit that have images
+
+```ruby
+ReadIt.sub('formula1').recent_images 
+```
+
 ## Contributing
 
 1. Fork it ( http://github.com/adamzaninovich/read_it/fork )

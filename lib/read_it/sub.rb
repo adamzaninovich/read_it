@@ -10,6 +10,10 @@ module ReadIt
       Post.parse ReadIt.http.get "#{name}/new.json"
     end
 
+    def recent_images
+      recent.select(&:image?)
+    end
+
     def sample
       recent.sample
     end
